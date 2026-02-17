@@ -11,7 +11,7 @@ import {
   ShieldCheck,
   Scale,
 } from "lucide-react";
-import andreaPhoto from "./assets/andrea.jpg";
+import andreaPhoto from "./assets/profile.jpeg";
 import {
   Card,
   CardContent,
