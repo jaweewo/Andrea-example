@@ -98,7 +98,7 @@ export default function BrokerHipotecarioLanding() {
 
   const about = {
     title: "Sobre mí",
-    text: "Soy Andrea Fernández Muñoz, creadora de Miss Money Hipotecas, con más de 20 años de experiencia en banca. Conozco el sistema desde dentro y eso me permite diseñar estrategias reales para conseguir el SÍ de los bancos. Negocio con entidades líderes en España para lograr las mejores condiciones y acompaño a mis clientes desde el análisis inicial hasta la firma en notaría.",
+    text: "Soy Andrea Fernández Muñoz, creadora de Miss Money Hipotecas y Miembro de ANICI (Asociación Nacional del Intermediario de Credito Inmobiliario) con más de 20 años de experiencia en banca. Conozco el sistema desde dentro y eso me permite diseñar estrategias reales para conseguir el SÍ de los bancos. Negocio con entidades líderes en España para lograr las mejores condiciones y acompaño a mis clientes desde el análisis inicial hasta la firma en notaría.",
     highlights: [
       { icon: <ShieldCheck className="h-4 w-4" />, text: "20+ años en banca" },
       { icon: <Scale className="h-4 w-4" />, text: "Estrategia bancaria real" },
