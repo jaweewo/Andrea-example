@@ -74,7 +74,7 @@ export default function BrokerHipotecarioLanding() {
       "Comparo y negocio hipotecas con las principales entidades para lograr condiciones adaptadas a tu perfil, con acompañamiento total hasta notaría.",
     location: "España",
     email: "contacto@tudominio.com",
-    phone: "+34 600 000 000",
+    phone: "+34 665 259 784",
     avatar: andreaPhoto,
     socials: {
       instagram: "#",
@@ -93,7 +93,7 @@ export default function BrokerHipotecarioLanding() {
         "Mejora de hipoteca desde otro banco",
         "Estudio personalizado y estrategia bancaria real"
     ],
-    ctaPrimary: "Ir al formulario",
+    ctaPrimary: "Escríbeme por WhatsApp",
   };
 
   const about = {
@@ -106,7 +106,12 @@ export default function BrokerHipotecarioLanding() {
     ],
   };
 
-  
+  const whatsappNumber = "34665259784";
+  const whatsappMessage =
+    "Hola Andrea, quiero pedir mi estudio gratuito para hipoteca. ¿Te cuento mi caso?";
+  const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
 
   const crmLink = "#"; // 🔗 enlace al CRM externo
 
@@ -211,11 +216,14 @@ export default function BrokerHipotecarioLanding() {
               </ul>
 
               <div className="mt-5">
-                <a href={crmLink} target="_blank" rel="noreferrer">
-                  <Button className="w-full rounded-2xl bg-[oklch(0.63_0.18_49.38)] text-black hover:bg-[oklch(0.63_0.18_49.38)]">
-                    {service.ctaPrimary}
+                <Button
+                  className="w-full rounded-2xl bg-[oklch(0.63_0.18_49.38)] text-black hover:bg-[oklch(0.63_0.18_49.38)]"
+                  onClick={() =>
+                  document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Escríbeme por WhatsApp
                   </Button>
-                </a>
               </div>
             </CardContent>
           </Card>
@@ -250,24 +258,25 @@ export default function BrokerHipotecarioLanding() {
         {/* Contacto */}
         <section id="contacto" className="mt-10">
           <SectionTitle
-            title="Accede a mi formulario"
-            subtitle="Te redirigiré a un formulario externo seguro para gestionar tu caso."
+            title="Pide tu estudio gratuito"
+            subtitle="Escríbeme por WhatsApp y revisamos tu caso sin compromiso."
           />
 
           <Card className="mt-4 rounded-2xl border-white/10 bg-white/5">
             <CardContent className="pt-6">
-              <a href={crmLink} target="_blank" rel="noreferrer">
+              <a href={waLink} target="_blank" rel="noreferrer">
                 <Button className="w-full rounded-2xl bg-[oklch(0.63_0.18_49.38)] text-black hover:bg-[oklch(0.63_0.18_49.38)]">
-                  Ir al formulario
+                  Contactar por WhatsApp
                 </Button>
               </a>
 
               <div className="mt-4 text-xs text-zinc-400 text-center">
-                Serás redirigido a mi plataforma para completar tus datos.
+                Te responderé personalmente por WhatsApp.
               </div>
 
               <div className="mt-5 flex items-center justify-center gap-2 text-xs text-zinc-400">
-                
+                <Phone className="h-3.5 w-3.5" />
+                {profile.phone}
               </div>
             </CardContent>
           </Card>
