@@ -285,7 +285,7 @@ export default function BrokerHipotecarioLanding() {
         {/* Footer */}
         <footer className="mt-10 pt-8 border-t border-white/10 text-center">
           <div className="text-xs text-zinc-500">
-            © {new Date().getFullYear()} {profile.name} · Hecho por ElevatedMediaDigi
+            © {new Date().getFullYear()} {profile.name} 
           </div>
          
         </footer>
