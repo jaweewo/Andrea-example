@@ -12,6 +12,8 @@ import {
   Scale,
 } from "lucide-react";
 import andreaPhoto from "./assets/profile.jpeg";
+import aboutPhoto from "./assets/about.jpg";
+import servicePhoto from "./assets/service.jpg";
 import {
   Card,
   CardContent,
@@ -73,13 +75,11 @@ export default function BrokerHipotecarioLanding() {
     headline:
       "Comparo y negocio hipotecas con las principales entidades para lograr condiciones adaptadas a tu perfil, con acompañamiento total hasta notaría.",
     location: "España",
-    email: "contacto@tudominio.com",
+    email: "missmoney2026@gmail.com",
     phone: "+34 665 259 784",
     avatar: andreaPhoto,
     socials: {
-      instagram: "#",
-      linkedin: "#",
-      youtube: "#",
+      instagram: "https://www.instagram.com/miss.money.hipotecas/",
     },
   };
 
@@ -185,8 +185,6 @@ export default function BrokerHipotecarioLanding() {
 
           <div className="mt-7 flex items-center justify-center gap-2">
             <SocialButton href={profile.socials.instagram} label="Instagram" Icon={Instagram} />
-            <SocialButton href={profile.socials.linkedin} label="LinkedIn" Icon={Linkedin} />
-            <SocialButton href={profile.socials.youtube} label="YouTube" Icon={Youtube} />
           </div>
         </motion.section>
 
@@ -201,6 +199,11 @@ export default function BrokerHipotecarioLanding() {
           />
 
           <Card className="mt-4 rounded-2xl border-white/10 bg-white/5">
+          <img
+              src={servicePhoto}
+              alt="Servicio hipotecas"
+              className="w-full rounded-t-2xl object-cover max-h-56"
+            />
             <CardHeader>
               <CardTitle className="text-white">{service.title}</CardTitle>
               <CardDescription className="text-zinc-300">{service.desc}</CardDescription>
@@ -238,6 +241,11 @@ export default function BrokerHipotecarioLanding() {
 
           <Card className="mt-4 rounded-2xl border-white/10 bg-white/5">
             <CardContent className="pt-6">
+              <img
+                src={aboutPhoto}
+                alt="Andrea trabajando"
+                className="w-full rounded-2xl mb-5 object-cover"
+              />
               <p className="text-zinc-200 leading-relaxed">{about.text}</p>
               <div className="mt-5 grid gap-2">
                 {about.highlights.map((h) => (
