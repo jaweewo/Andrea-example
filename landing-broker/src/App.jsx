@@ -85,24 +85,24 @@ export default function BrokerHipotecarioLanding() {
 
   const service = {
     title: "Intermediación y gestión de hipoteca",
-    desc: "Analizo tu caso, comparo ofertas del mercado y negocio con bancos para conseguir condiciones competitivas, siempre alineadas con tus necesidades.",
+    desc: "Analizo tu situación, diseño la estrategia y negocio con bancos hasta conseguir la mejor aprobación posible. Te acompaño desde el minuto 0 hasta notaría.",
     bullets: [
-      "Análisis de perfil y viabilidad (compra vivienda habitual o inversión)",
-      "Comparación de ofertas hipotecarias del mercado",
-      "Negociación con entidades bancarias a nivel nacional",
-      "Acompañamiento completo hasta notaría y entrega de llaves",
-      "Información clara y transparencia durante todo el proceso",
+        "Españoles, NIE y no residentes",
+        "Financiación hasta el 100%",
+        "Reunificación de deudas",
+        "Mejora de hipoteca desde otro banco",
+        "Estudio personalizado y estrategia bancaria real"
     ],
     ctaPrimary: "Ir al formulario",
   };
 
   const about = {
     title: "Sobre mí",
-    text: "Soy Andrea Fernández Muñoz, Asesora de Crédito Inmobiliario, con 20 años de experiencia en el sector bancario y más de tres años como intermediaria de crédito inmobiliario. Especializada en acompañar a personas que quieren conseguir su hipoteca. Analizo y comparo las mejores ofertas del mercado, colaboro con las principales entidades bancarias. Trabajo siempre del lado del cliente acompañándole de principio a fin hasta la firma en notaria",
+    text: "Soy Andrea Fernández Muñoz, creadora de Miss Money Hipotecas, con más de 20 años de experiencia en banca. Conozco el sistema desde dentro y eso me permite diseñar estrategias reales para conseguir el SÍ de los bancos. Negocio con entidades líderes en España para lograr las mejores condiciones y acompaño a mis clientes desde el análisis inicial hasta la firma en notaría.",
     highlights: [
-      { icon: <ShieldCheck className="h-4 w-4" />, text: "20 años de experiencia bancaria" },
-      { icon: <Scale className="h-4 w-4" />, text: "Comparo y negocio con bancos" },
-      { icon: <BadgeCheck className="h-4 w-4" />, text: "Acompañamiento hasta notaría" },
+      { icon: <ShieldCheck className="h-4 w-4" />, text: "20+ años en banca" },
+      { icon: <Scale className="h-4 w-4" />, text: "Estrategia bancaria real" },
+      { icon: <BadgeCheck className="h-4 w-4" />, text: "Negocio por ti con los bancos" },
     ],
   };
 
@@ -276,7 +276,7 @@ export default function BrokerHipotecarioLanding() {
         {/* Footer */}
         <footer className="mt-10 pt-8 border-t border-white/10 text-center">
           <div className="text-xs text-zinc-500">
-            © {new Date().getFullYear()} {profile.name} · Hecho para GitHub Pages
+            © {new Date().getFullYear()} {profile.name} · Hecho por ElevatedMediaDigi
           </div>
          
         </footer>
